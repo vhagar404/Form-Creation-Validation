@@ -1,0 +1,47 @@
+# Fetching Data From an API – User List Display
+
+This project demonstrates how to fetch user data asynchronously from a public API and display it on a webpage.  
+It is part of the **Form-Creation-Validation** repository.
+
+---
+
+## 📌 Objective
+Create a simple webpage that:
+- Fetches user data from an API asynchronously  
+- Displays each user’s name in a styled list  
+- Handles errors gracefully  
+
+Public API used:
+https://jsonplaceholder.typicode.com/users
+
+---
+
+## 📁 Files in This Project
+| File | Description |
+|------|-------------|
+| `fetch-data.html` | Main HTML structure |
+| `fetch-data.css` | Styling for the page |
+| `fetch-data.js` | Contains logic for fetching + displaying data |
+
+---
+
+## 🚀 How It Works
+
+### 1. JavaScript fetches data asynchronously
+An async function named `fetchUserData()` sends a request to the API using `fetch()`.
+
+### 2. Data is converted to JSON
+The API response is parsed with:
+```js
+await response.json();
+3. Names are displayed in a list
+
+Each user’s name is placed inside a <li> element, which is inserted in a <ul>.
+
+4. Error handling
+
+If something goes wrong, a message is displayed:
+Failed to load user data.
+5. Runs on page load
+The script executes automatically after the DOM is fully loaded:
+document.addEventListener('DOMContentLoaded', fetchUserData);
