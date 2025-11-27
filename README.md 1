@@ -35,6 +35,33 @@ The API response is parsed with:
 ```js
 await response.json();
 3. Names are displayed in a list
+🖼 Expected Output
+
+A clean list of user names similar to:
+
+Leanne Graham
+
+Ervin Howell
+
+Clementine Bauch
+
+Patricia Lebsack
+
+...
+
+✅ Technologies Used
+
+HTML5
+
+CSS3
+
+Vanilla JavaScript
+
+Fetch API / Async–Await
+
+📜 License
+
+This project is for learning and practice under ALX.
 
 Each user’s name is placed inside a <li> element, which is inserted in a <ul>.
 
